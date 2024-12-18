@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Ad Blocker",
+    "version": "1.0",
+    "description": "Blocks advertisements on websites",
+    "permissions": ["declarativeNetRequest", "declarativeNetRequestFeedback"],
+    "host_permissions": ["<all_urls>"],
+    "action": {
+      "default_icon": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+      }
+      
+    },
+    "declarative_net_request": {
+      "rule_resources": [
+        {
+          "id": "block_ads",
+          "enabled": true,
+          "path": "rules.json"
+        }
+      ]
+    }
+  }
+  
+  
